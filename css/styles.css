@@ -2,9 +2,22 @@
     --primary-text-color: #212121;
     --accent-color: #2196F3;
     --second-text-color: #757575;
+    --logo-color: #2196F3;
+    --logo-footer-color: #ffffff;
+    --body-background-color: #ffffff;
+    --hero-background-color: #2F303A;
+    --hero-button-color: #ffffff;
+    --hero-back-color: #2196F3;
+    --hero-accent-color: #188CE8;
+    --h1-color: #ffffff;
+    --footer-back-color: #2F303A;
+    --contact-footer-color: rgba(255, 255, 255, 0.6);
+    --portfolio-button-color: #F5F4FA;
+
+
 }
 body{
- background-color: white;
+ background-color: var(--body-background-color);
  color: #212121;
 font-family: 'Roboto', sans-serif;
 }
@@ -21,7 +34,7 @@ letter-spacing: 0.03em;
 text-decoration: none;
 }
 .web-logo {
-    color: #2196F3;
+    color: var(--logo-color)
 }
 
 /* Навігація */
@@ -37,9 +50,11 @@ list-style-type: none;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
-.site-nav a:hover,:focus {
+.site-nav a:hover,
+.site-nav a:focus {
 color: var(--accent-color);
 }
+
 
 /* Контакти */
 .contact {
@@ -60,13 +75,13 @@ list-style-type: none;
  
 /* Герой */
 .hero {
-background-color: #2F303A;
+background-color: var(--hero-background-color);
 }
 
 .hero-button{
-color: #FFFFFF;
+color: var(--hero-button-color);
 cursor: pointer;
-background-color: #2196F3;
+background-color:var(--hero-back-color);
 font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
@@ -75,16 +90,15 @@ font-family: 'Roboto';
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px
 
 }
 .hero-button:hover{
-background-color: #188CE8;
+background-color:var(--hero-accent-color);
 }
 
 h1 {
-color: #FFFFFF;
+color:var(--h1-color);
 
 font-weight: 900;
 font-size: 44px;
@@ -157,11 +171,11 @@ list-style-type: none;
 
 /* Футер */
 .footer {
-background-color: #2F303A;;
+background-color:var(--footer-back-color);
 }
 
 .logo-footer{
-color: #ffffff;
+color:var(--logo-footer-color);
 
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -179,7 +193,7 @@ color: #ffffff;
     text-decoration: none;
 }
 .contact-footer a{
-color: rgba(255, 255, 255, 0.6);
+color:var(--contact-footer-color);
 text-decoration: none;
 }
 .contact-footer a:hover,
@@ -189,7 +203,7 @@ color: var(--accent-color);}
 list-style-type: none;
 }
 .street {
-color: #FFFFFF;
+color:var(--logo-footer-color);
 }
 
 
@@ -200,7 +214,8 @@ display: none;
 
 /* button-list */
 .button-list button{
-background: #F5F4FA;
+background:var(--portfolio-button-color);
+font-family: 'Roboto';
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
@@ -211,8 +226,8 @@ background: #F5F4FA;
 .button-list {
 list-style-type: none;
 }
-.all:hover,:focus{
-color: #FFFFFF;
+.button-list button:hover,:focus{
+color:var(--hero-button-color);
 background-color: var(--accent-color);
 }
 
