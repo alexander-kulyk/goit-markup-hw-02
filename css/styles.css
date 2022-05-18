@@ -13,15 +13,14 @@
     --footer-back-color: #2F303A;
     --contact-footer-color: rgba(255, 255, 255, 0.6);
     --portfolio-button-color: #F5F4FA;
-
+    --focus-back-color: rgba(0, 0, 0, 0);
 
 }
 body{
  background-color: var(--body-background-color);
- color: #212121;
+ color:var(--primary-text-color);
 font-family: 'Roboto', sans-serif;
 }
-
 /* Logo */
 .logo {
 color: var(--primary-text-color);
@@ -33,6 +32,9 @@ line-height: 1.19;
 letter-spacing: 0.03em;
 text-decoration: none;
 }
+.logo:focus{
+    background-color: var(--focus-back-color);
+}
 .web-logo {
     color: var(--logo-color)
 }
@@ -41,7 +43,7 @@ text-decoration: none;
 .site-nav{
 list-style-type: none;
 }
-.site-nav a {
+.site-nav a{
     color: var(--primary-text-color);
 
     font-weight: 500;
@@ -50,9 +52,11 @@ list-style-type: none;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
-.site-nav a:hover,
-.site-nav a:focus {
+.site-nav a:hover {
 color: var(--accent-color);
+}
+.site-nav a:focus{
+    background-color: var(--focus-back-color);
 }
 
 
@@ -71,6 +75,9 @@ list-style-type: none;
 }
 .contact a:hover,:focus{
     color: var(--accent-color);
+}
+.contact a:focus {
+    background-color:var(--focus-back-color);
 }
  
 /* Герой */
@@ -184,6 +191,9 @@ color:var(--logo-footer-color);
     letter-spacing: 0.03em;
     text-decoration: none;
 }
+.logo-footer:focus{
+    background-color:var(--focus-back-color);
+}
 .contact-footer {
     font-style: normal;
     font-weight: 500;
@@ -196,9 +206,11 @@ color:var(--logo-footer-color);
 color:var(--contact-footer-color);
 text-decoration: none;
 }
-.contact-footer a:hover,
-:focus{
+.contact-footer a:hover{
 color: var(--accent-color);}
+.contact-footer a:focus {
+    background-color:var(--focus-back-color);
+}
 .contact-footer{
 list-style-type: none;
 }
@@ -214,7 +226,7 @@ display: none;
 
 /* button-list */
 .button-list button{
-background:var(--portfolio-button-color);
+background-color:var(--portfolio-button-color);
 font-family: 'Roboto';
     border-radius: 4px;
     font-weight: 500;
@@ -226,13 +238,14 @@ font-family: 'Roboto';
 .button-list {
 list-style-type: none;
 }
-.button-list button:hover,:focus{
+.button-list button:hover{
 color:var(--hero-button-color);
 background-color: var(--accent-color);
 }
-
-.button-list button:hover,:focus{
+.button-list button:focus{
 cursor: pointer;
+color:var(--accent-color);
+background-color:var(--focus-back-color);
 }
 
 /* Проект */
